@@ -1,0 +1,51 @@
+html, body {
+	height: 100%;
+}
+
+html, body, input, textarea, button {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+}
+
+header ul.mui-list--inline {
+	margin-bottom: 0;
+}
+
+header a {
+	color: #fff;
+}
+
+#container {
+	min-height: 100%;
+	box-sizing: border-box;
+	margin-bottom: -100px;
+}
+
+.grid-container {
+	display: grid;
+	max-width: 100%;
+}
+
+.grid-container--fill {
+	grid-gap: 5px;
+	grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid-container > iframe, .grid-element {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.grid-element video {
+	width: calc(100% / 10);
+}
