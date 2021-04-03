@@ -46,7 +46,7 @@ jQuery(function ($) {
 			selectClass.change(function () { worker.postMessage($(this).val()) })
 			$.get('/api/class', function (result) {
 				selectClass.append(new Option('Semua Kelas', 'default'))
-				$.each(result.data, function (i, v) { selectClass.append(new Option(v.name, v.initial)) })
+				$.each(result.data, function (i, v) { selectClass.append(new Option(v.name, v.name.replace(' ', '_'))) })
 			})
 		}
 	}

@@ -23,6 +23,12 @@ class IController extends CController {
 		return array('deny', 'users'=>array('*'));
 	}
 
+	public function loadScript(string $script): string {
+		$basePath = Yii::getPathOfAlias('webroot');
+		$scriptPath = $this->mainAssets('js') . DIRECTORY_SEPARATOR . $script . '.js';
+		return file_get_contents($basePath . $scriptPath);
+	}
+
 	public function registerClientCss(string $filename, bool $hasMin = false) {
 		$filename = $filename . ((!YII_DEBUG and $hasMin) ? '.min' : '') . '.css';
 		$this->cs->registerCssFile($this->mainAssets('css') . DIRECTORY_SEPARATOR . $filename);
