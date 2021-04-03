@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a48bdf52-cabf-478d-98fe-62cb323c825e" name="StreamServer" url="https://stream.afcode.id">
+        <fileTransfer rootFolder="/home/www/stream" accessType="SFTP" host="103.56.148.108" port="22" sshConfigId="81bb617d-a24e-4bfe-961e-570194dad340" sshConfig="root@103.56.148.108:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

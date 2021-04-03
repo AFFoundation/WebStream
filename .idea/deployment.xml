@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="StreamServer" uploadOnCheckin="a48bdf52-cabf-478d-98fe-62cb323c825e" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="StreamServer">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/runtime" />
+            <excludedPath local="true" path="$PROJECT_DIR$/assets" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="StreamServer" />
+  </component>
+</project>
