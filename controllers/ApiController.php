@@ -19,7 +19,7 @@ class ApiController extends IController {
 	public function actionStream(string $route, string $id) {
 		if ($route === 'pub') Stream::model()->newStream($id);
 		if ($route === 'del') Stream::model()->deleteByIdentity($id);
-		foreach (Stream::model()->findAll() as $stream)
+		foreach (Stream::model()->findAllByIdentity($id) as $stream)
 			$this->_data[] = CMap::mergeArray($stream->attributes, array('url' => $stream->url));
 		$this->responseSuccess($this->_data);
 	}

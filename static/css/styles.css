@@ -17,7 +17,28 @@ header {
 }
 
 header ul.mui-list--inline {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	margin-bottom: 0;
+}
+
+header .mui-select {
+	padding-top: unset;
+	margin-bottom: unset;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+header #select-class {
+	color: #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: transparent;
+	margin-right: 10px;
+}
+
+header .mui-select__menu {
+	color: black;
 }
 
 header a {

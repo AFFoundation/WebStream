@@ -53,6 +53,12 @@ class Stream extends CActiveRecord {
 		return $this->deleteAll($criteria);
 	}
 
+	public function findAllByIdentity(string $identity): array {
+		$criteria = new CDbCriteria();
+		if ($identity != 'default') $criteria->addSearchCondition('name', $identity);
+		return $this->findAll($criteria);
+	}
+
 	protected function beforeValidate(): bool {
 		if (!$this->da) $this->da = round(microtime(true) * 1000);
 		return parent::beforeValidate();
